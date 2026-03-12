@@ -1,21 +1,23 @@
 import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Catalog } from "@/components/catalog"
+import { HeroSection } from "@/components/hero-section"
+import { ModelCategories } from "@/components/model-categories"
 import { ComparisonTable } from "@/components/comparison-table"
 import { Testimonials } from "@/components/testimonials"
-import { CTA } from "@/components/cta"
+import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
-      <Catalog />
-      <ComparisonTable />
-      <Testimonials />
-      <CTA />
+      <main>
+        <HeroSection />
+        <ModelCategories />
+        <ComparisonTable />
+        <Testimonials />
+        <CtaSection />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 }
